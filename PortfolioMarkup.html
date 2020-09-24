@@ -1,10 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rakhmangulov Emil M33071">
+    <meta name="keywords" content="Rakhmangulov, Emil">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+<!--    <script src="Function.js"></script>-->
+    <script>
+        function openNav() {
+            document.getElementById("mySideNav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0";
+        }
+    </script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <title>Rakhmangulov Emil M33071</title>
 </head>
+
 <body>
-$END$
+<header>
+    <div id="mySideNav" class="barNav">
+        <nav>
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="#aboutMe">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </div>
+    <span onclick="openNav()"><span class="iconify" data-inline="false"
+                                    data-icon="bx:bx-dots-horizontal-rounded"
+                                    style="font-size: 64px; color: black;"></span></span>
+
+    <div id="home" class="home">
+        <div class="wrapperHome">
+            <div class="homeText">
+                <h1 class="homeName">
+                    Rakhmangulov </br> Emil
+                </h1>
+                <h2 class="homeInfo">
+                    Junior developer / Student
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!--    About me-->
+
+    <section class="aboutMe">
+            <div id="aboutMe" class="wrapperAboutMe">
+                <h2 class="aboutMeTitle">About me</h2>
+                <p class="aboutMeInfo">
+                    I'm like a scourge of God descended from heaven to achieve success,</br>
+                    I'm a junior developer,</br>
+                    I’m tatar
+                </p>
+                <img src="Image/myImg.JPG" width="auto"
+                     height="560" class="myImg">
+            </div>
+    </section>
+
+<!--    Skills-->
+
+    <section class="skills">
+        <div id="skills" class="wrapperSkills">
+
+            <h2 class="skillsTitle">Skills</h2>
+
+            <div class="skillsSubtitle">
+
+            <h3 class="skillHard">
+                <span>Hard skills</span>
+            </h3>
+            <div class="skillGrid">
+                <div class="skillInfo">
+                    <h4 class="skillTitleJava">
+                        Java
+                    </h4>
+                    <div class="skillProgressJava">
+                    </div>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleSwift">
+                        Swift5
+                    </h4>
+                    <div class="skillProgressSwift">
+                        <div class="progressSwift">
+                            <p class="skillProgressText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleSwiftUI">
+                        Swift UI/UX
+                    </h4>
+                    <div class="skillProgressSwiftUI">
+                        <div class="progressSwiftUI">
+                            <p class="skillProgressText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleCsharp">
+                        C#
+                    </h4>
+                    <div class="skillProgressCsharp">
+                        <div class="progressCsharp">
+                            <p class="skillProgressText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleC">
+                        C/C++
+                    </h4>
+                    <div class="skillProgressC">
+                        <div class="progressC">
+                            <p class="skillProgressText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleH">
+                        HTML/CSS
+                    </h4>
+                    <div class="skillProgressH">
+                        <div class="progressH">
+                            <p class="skillProgressText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="skillsSubtitle">
+
+            <h3 class="skillSoft">
+                <span>Soft skills</span>
+            </h3>
+            <div class="skillGrid">
+                <div class="skillInfo">
+                    <h4 class="skillTitleRussian">Russian: Native speaker</h4>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleEnglish">English: B2</h4>
+                </div>
+                <div class="skillInfo">
+                    <h4 class="skillTitleTatar">Tatar: Understand</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!--    Projects-->
+
+    <section class="projects">
+        <div id="projects" class="wrapperProjects">
+            <div class="mainTitle">
+                <h2 class="projectsTitle">
+                    <span>Projects</span>
+                </h2>
+            </div>
+            <div>
+                <h3 class="projectTitleCook">
+                    <span>Cookbook</span>
+                </h3>
+                <img src="Image/screen1.png" height="560px" class="screen1">
+                <img src="Image/screen2.png" height="560px" class="screen2">
+                <aside><p></p></aside>
+                <p class="cookProject">in process</p>
+            </div>
+            <div>
+                <h3 class="projectTitleAPI">
+                    <a href="https://github.com/Emilrakh/NexignServerAPI">
+                        <span>Server API(Nexign)</span></a>
+                </h3>
+
+            </div>
+            <div>
+                <h3 class="projectTitleRGB">
+                    <a href="https://github.com/Emilrakh/TestRGB">
+                        <span>Test: RGB Game</span></a>
+                </h3>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--Contacts-->
+
+<footer class="contacts">
+    <div id="contacts" class="wrapperContacts">
+        <h2 class="contactsTitle">Contacts</h2>
+        <div class="contactsNavDiv">
+        <nav class="contactsNav">
+            <ul class="contactsLinks">
+                <li class="contactLink">
+                    <a href="https://www.instagram.com/rakhmaemiljan/">
+                        <span class="iconify" data-inline="false"
+                              data-icon="cib:instagram" style="font-size: 64px;
+                              color: black;"></span></a>
+                </li>
+                <li class="contactLink">
+                    <a href="https://web.telegram.org/t.me/emilrakh">
+                        <span class="iconify" data-inline="false"
+                              data-icon="bx:bxl-telegram" style="font-size: 64px;
+                              color: black;"></span></a>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="https://github.com/Emilrakh">
+                        <span class="iconify" data-inline="false"
+                              data-icon="ant-design:github-filled" style="font-size: 64px;
+                              color: black;"></span>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="mailto:emilrakh@gmail.com">
+                        <span class="iconify" data-inline="false"
+                              data-icon="cib:mail-ru" style="font-size: 64px;
+                              color: black;"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

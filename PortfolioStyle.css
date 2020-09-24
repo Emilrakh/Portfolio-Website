@@ -1,0 +1,444 @@
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: left;
+    color: #000000;
+}
+
+h3{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: left;
+    color: #000000;
+}
+
+p{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+}
+
+h3{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: initial;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+/*Header/bar*/
+
+.barNav {
+    height: 200%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.barNav a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: #f3be48;
+    font-size: 40px;
+    color: #808080;
+    display: block;
+    transition: 0.3s;
+}
+
+.barNav a:hover {
+    color: #E55F5F;
+}
+
+.barNav .close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background:
+            /*linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 64.06%),*/
+    url(Image/img4.jpg);
+    background-size: 100%;
+}
+
+/*Home*/
+
+.wrapperHome .homeName{
+    position: absolute;
+    width: 900px;
+    height: 276px;
+    left: 270px;
+    top: 20%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 138px;
+    text-align: center;
+    color: #000000;
+}
+
+.wrapperHome h2{
+    position: absolute;
+    width: 400px;
+    height: 35px;
+    left: 520px;
+    top: 540px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+
+/*About me*/
+
+.wrapperAboutMe{
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 789px;
+    background: #FFFFFF;
+}
+
+.wrapperAboutMe h2{
+    position: absolute;
+    left: 40px;
+}
+
+.wrapperAboutMe p{
+    position: absolute;
+    width: 858px;
+    height: 136px;
+    left: 62px;
+    top : 200px;
+}
+
+.wrapperAboutMe img{
+    position: absolute;
+    left: 970px;
+    top: 20px;
+}
+
+/*Skills*/
+
+.wrapperSkills{
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 1389px;
+    background: #f3be48;
+}
+
+.wrapperSkills h2{
+    position: absolute;
+    left: 40px;
+}
+
+.skillTitleJava{
+    position: absolute;
+    top:200px;
+    left: 40px;
+}
+
+.skillProgressJava{
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    left: 270px;
+    top: 270px;
+    background: #E55F5F;
+}
+
+.skillTitleSwift{
+    position: absolute;
+    top:250px;
+    left: 40px;
+}
+
+.skillProgressSwift{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 270px;
+    top: 320px;
+    background: #E55F5F;
+}
+
+.skillTitleSwiftUI{
+    position: absolute;
+    top:300px;
+    left: 40px;
+}
+
+.skillProgressSwiftUI{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 270px;
+    top: 370px;
+    background: #E55F5F;
+}
+
+.skillTitleCsharp{
+    position: absolute;
+    top:350px;
+    left: 40px;
+}
+
+.skillProgressCsharp{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    left: 270px;
+    top: 420px;
+    background: #E55F5F;
+}
+
+.skillTitleC{
+    position: absolute;
+    top:400px;
+    left: 40px;
+}
+
+.skillProgressC{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 270px;
+    top: 470px;
+    background: #E55F5F;
+}
+
+.skillTitleH{
+    position: absolute;
+    top:450px;
+    left: 40px;
+}
+
+.skillProgressH{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 270px;
+    top: 520px;
+    background: #E55F5F;
+}
+
+.skillHard {
+    left: 40px;
+    top : 150px;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+.skillGrid h4{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: left;
+    color: #000000;
+}
+
+.skillTitleRussian{
+    position: absolute;
+    top:200px;
+    left: 900px;
+}
+
+.skillTitleEnglish{
+    position: absolute;
+    top:250px;
+    left: 900px;
+}
+
+.skillTitleTatar{
+    position: absolute;
+    top:300px;
+    left: 900px;
+}
+
+.skillSoft {
+    left: 900px;
+    top : 150px;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+/*Projects*/
+
+.wrapperProjects{
+    position: absolute;
+    width: 1440px;
+    height: 1200px;
+    left: 0px;
+    top: 1989px;
+    background: #FFFFFF;
+}
+
+.projectTitleCook {
+    left: 40px;
+    top : 150px;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+.screen1{
+    border-radius: 37px;
+    position: absolute;
+    width: 311px;
+    height: 654px;
+    left: 50px;
+    top: 257px;
+}
+
+.screen2{
+    border-radius: 37px;
+    position: absolute;
+    width: 311px;
+    height: 642.99px;
+    left: 192px;
+    top: 424px;
+}
+
+.cookProject{
+    position: absolute;
+    width: 186px;
+    height: 46px;
+    left: 249px;
+    top: 1045px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.projectTitleAPI {
+    left: 900px;
+    top : 150px;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+.projectTitleRGB {
+    left: 900px;
+    top : 500px;
+    position: absolute;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #000000;
+}
+
+.wrapperProjects h2{
+    position: absolute;
+    left: 40px;
+}
+
+/*Contacts*/
+
+.wrapperContacts{
+    position: absolute;
+    width: 1440px;
+    height: 300px;
+    left: 0px;
+    top: 3189px;
+    background: #E55F5F;
+}
+
+.contactsNavDiv{
+    position: absolute;
+    bottom: 0px;
+}
+
+.wrapperContacts h2{
+    position: absolute;
+    left: 40px;
+}
+
+.contactsLinks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 41px;
+    justify-content:space-around;
+}
+
+.contactLink{
+    margin: 0 16.5px;
+    font-size: 40px;
+    list-style-type: none;
+    color: black;
+}
+
+.footerLink:hover .sm{
+    color: #E55F5F;
+}
+
+footer{
+    display: block;
+}
