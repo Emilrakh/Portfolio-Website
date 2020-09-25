@@ -47,10 +47,10 @@ h3{
 /*Header/bar*/
 
 .barNav {
-    height: 200%;
+    height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #000000;
@@ -377,6 +377,20 @@ header{
     font-size: 30px;
     line-height: 34px;
     text-align: left;
+    color: #000000;
+}
+
+.list{
+    position: absolute;
+    width: 186px;
+    height: 46px;
+    left:900px;
+    top: 210px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
     color: #000000;
 }
 
