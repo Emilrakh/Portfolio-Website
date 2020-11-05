@@ -1,244 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rakhmangulov Emil M33071">
-    <meta name="keywords" content="Rakhmangulov, Emil">
+    <title>Rakhmangulov Emil</title>
     <link rel="stylesheet" href="PortfolioStyle.css">
-<!--    <script src="Function.js"></script>-->
-    <script>
-        function openNav() {
-            document.getElementById("mySideNav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySideNav").style.width = "0";
-        }
-    </script>
+    <link rel="icon" href="">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <title>Rakhmangulov Emil M33071</title>
+    <meta name="keywords" content="Рахмангулов, Эмиль, ИТМО">
 </head>
 
 <body>
-<header>
-    <div id="mySideNav" class="barNav">
+<header class="header">
+    <div class="headerLinks">
         <nav>
-            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-            <a href="#aboutMe">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <ul class="headerFlex">
+                <li>
+                    <a class="headerLink" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#aboutMe">About me</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#contacts">Contacts</a>
+                </li>
+            </ul>
         </nav>
-    </div>
-    <span onclick="openNav()"><span class="iconify" data-inline="false"
-                                    data-icon="bx:bx-dots-horizontal-rounded"
-                                    style="font-size: 64px; color: black;"></span></span>
-
-    <div id="home" class="home">
-        <div class="wrapperHome">
-            <div class="homeText">
-                <h1 class="homeName">
-                    Rakhmangulov </br> Emil
-                </h1>
-                <h2 class="homeInfo">
-                    Junior developer / Student
-                </h2>
-            </div>
-        </div>
     </div>
 </header>
 
 <main>
 
-<!--    About me-->
+    <!--    Intro-->
 
-    <section class="aboutMe">
-            <div id="aboutMe" class="wrapperAboutMe">
-                <h2 class="aboutMeTitle">About me</h2>
-                <p class="aboutMeInfo">
-                    I'm like a scourge of God descended from heaven to achieve success,</br>
-                    I'm a <strong>junior developer</strong>,</br>
-                    I’m tatar
-                </p>
-                <img src="Image/myImg.JPG" width="auto"
-                     height="560" class="myImg">
-            </div>
-    </section>
-
-<!--    Skills-->
-
-    <section class="skills">
-        <div id="skills" class="wrapperSkills">
-
-            <h2 class="skillsTitle">Skills</h2>
-
-            <div class="skillsSubtitle">
-
-            <h3 class="skillHard">
-                <span>Hard skills</span>
-            </h3>
-            <div class="skillGrid">
-                <div class="skillInfo">
-                    <h4 class="skillTitleJava">
-                        Java
-                    </h4>
-                    <div class="skillProgressJava">
-                    </div>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleSwift">
-                        Swift5
-                    </h4>
-                    <div class="skillProgressSwift">
-                        <div class="progressSwift">
-                            <p class="skillProgressText"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleSwiftUI">
-                        Swift UI/UX
-                    </h4>
-                    <div class="skillProgressSwiftUI">
-                        <div class="progressSwiftUI">
-                            <p class="skillProgressText"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleCsharp">
-                        C#
-                    </h4>
-                    <div class="skillProgressCsharp">
-                        <div class="progressCsharp">
-                            <p class="skillProgressText"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleC">
-                        C/C++
-                    </h4>
-                    <div class="skillProgressC">
-                        <div class="progressC">
-                            <p class="skillProgressText"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleH">
-                        HTML/CSS
-                    </h4>
-                    <div class="skillProgressH">
-                        <div class="progressH">
-                            <p class="skillProgressText"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <div class="skillsSubtitle">
-
-            <h3 class="skillSoft">
-                <span>Soft skills</span>
-            </h3>
-            <div class="skillGrid">
-                <div class="skillInfo">
-                    <h4 class="skillTitleRussian">Russian: Native speaker</h4>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleEnglish">English: B2</h4>
-                </div>
-                <div class="skillInfo">
-                    <h4 class="skillTitleTatar">Tatar: Understand</h4>
-                </div>
-            </div>
+    <section class="intro">
+        <span id="home"></span>
+        <div class="introFlex">
+            <div class="nameFlex">
+                <h1 class="introText">Rakhmangulov Emil</h1>
+                <h3 class="introText">Junior Developer / Student</h3>
+                <h5 class="introText">Saint-Petersburg, Russia</h5>
             </div>
         </div>
     </section>
 
-<!--    Projects-->
+    <!--    About me-->
+
+    <section class="aboutMe">
+        <span id="aboutMe"></span>
+        <div class="sectionName pr">
+            <h1>About me</h1>
+        </div>
+
+        <div class="aboutMeInfo">
+            <div class="aboutMeText">
+                <p class="aboutMeInfoText"> I'm like a scourge of God descended from heaven to achieve success,</br>
+                    I'm a <strong>junior developer</strong>,</br>
+                    I’m tatar </p>
+            </div>
+            <div class="aboutMeSingleSlide">
+                <img src="./Image/myImg.jpg" alt="Rakhmangulov Emil" class="myImg">
+            </div>
+        </div>
+    </section>
+
+    <!--    Skills-->
+
+    <section>
+        <span id="skills"></span>
+        <div class="skillsFlex">
+            <div class="sectionName pr">
+                <h1>Hard skills</h1>
+            </div>
+
+            <div>
+                <div class="skillsCharts">
+                    <section>
+                        <h3 class="skillText">Java</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="210,40.2"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="cib:java"
+                                  style="font-size: 24px; color: black;"></span>
+                        </div>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">C#</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="125.6,125.6"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="teenyicons:c-sharp-solid"
+                                  style="font-size: 120px; color: black;"></span>
+                        </div>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">Swift</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="70,181.2"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="fa-brands:swift"
+                                  style="font-size: 100px; color: black;"></span>
+                        </div>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">C/C++</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="40,211.2"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="file-icons:c"
+                                  style="font-size: 100px; color: black;"></span>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="skillsCharts">
+                    <section class="sectionFlex">
+                        <h3 class="skillText">CSS/HTML</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="70,181.2"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="icomoon-free:html-five"
+                                  style="font-size: 110px; color: black;"></span>
+                        </div>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">Python</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="70,181.2"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="carbon:logo-python"
+                                  style="font-size: 120px; color: black;"></span>
+                        </div>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">SQL</h3>
+                        <div>
+                            <svg class="svg" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                      stroke-dasharray="175.6,75.6"
+                                      d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                                <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+                                </text>
+                            </svg>
+                            <span class="iconify icon" data-inline="false" data-icon="carbon:sql"
+                                  style="font-size: 120px; color: black;"></span>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="sectionName pr">
+                    <h1>Soft skills</h1>
+                </div>
+
+                <div class="skillsCharts">
+                    <section class="sectionFlex">
+                        <h3 class="skillText">English</h3>
+                        <svg class="svg" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                  stroke-dasharray="211.2,40"
+                                  d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                            <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">B2</text>
+                        </svg>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">Russian</h3>
+                        <svg class="svg" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                  stroke-dasharray="243.2,8"
+                                  d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                            <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">Native</text>
+                        </svg>
+                    </section>
+
+                    <section class="sectionFlex">
+                        <h3 class="skillText">Tatar</h3>
+                        <svg class="svg" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#f1c77a"/>
+                            <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#df5976"
+                                  stroke-dasharray="125.6,125.6"
+                                  d="M50 10
+                                     a 40 40 0 0 1 0 80
+                                     a 40 40 0 0 1 0 -80"/>
+                            <text class="text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">Native</text>
+                        </svg>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Projects-->
 
     <section class="projects">
-        <div id="projects" class="wrapperProjects">
-            <div class="mainTitle">
-                <h2 class="projectsTitle">
-                    <span>Projects</span>
-                </h2>
-            </div>
+        <span id="projects"></span>
+        <div class="sectionName pr">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="projectsFlex ">
             <div>
-                <h3 class="projectTitleCook">
-                    <span>Cookbook</span>
-                </h3>
-                <img src="Image/screen1.png" height="560px" class="screen1">
-                <img src="Image/screen2.png" height="560px" class="screen2">
-                <aside><p></p></aside>
+                <div class="sectionName">
+                    <h1>Cookbook</h1>
+                </div>
+                <div class="scr">
+                    <img src="Image/screen1.png" height="560px" class="screen1">
+                    <img src="Image/screen2.png" height="560px" class="screen2">
+                </div>
                 <p class="cookProject">in progress</p>
             </div>
-            <div>
-                <h3 class="projectTitleAPI">
-                    <a href="https://github.com/Emilrakh/NexignServerAPI">
-                        <span>Server API(Nexign)</span></a>
-                </h3>
-                <dl class="list">
-                    <dt>Used:</dt>
-                    <dd>Spring</dd>
-                    <dd>PostgreSQL</dd>
-                    <dd>Maven</dd>
-                    <dd>Hibernate</dd>
-                </dl>
 
-            </div>
-            <div>
-                <h3 class="projectTitleRGB">
-                    <a href="https://github.com/Emilrakh/TestRGB">
-                        <span>Test: RGB Game</span></a>
-                </h3>
+            <div class=" secondColumn">
+                <div class="block">
+                    <div class="sectionName">
+                        <a href="https://github.com/Emilrakh/NexignServerAPI">
+                            <h1>Server API(Nexign)</h1></a>
+                    </div>
+<!--                    <dl class="list">-->
+<!--                        <dt>Used:</dt>-->
+<!--                        <dd>Spring</dd>-->
+<!--                        <dd>PostgreSQL</dd>-->
+<!--                        <dd>Maven</dd>-->
+<!--                        <dd>Hibernate</dd>-->
+<!--                    </dl>-->
+                </div>
+
+                <div class="block">
+                    <div class="sectionName">
+                        <a href="https://github.com/Emilrakh/TestRGB">
+                            <h1>Test: RGB Game</h1></a>
+                        <img src="Image/screen3/screen3.png" height="560px" class="screen3">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 
-<!--Contacts-->
-
 <footer class="contacts">
-    <div id="contacts" class="wrapperContacts">
-        <h2 class="contactsTitle">Contacts</h2>
-        <div class="contactsNavDiv">
-        <nav class="contactsNav">
+    <span id="contacts"></span>
+    <div class="sectionName">
+        <h1>Contacts</h1>
+    </div>
+    <div class="contactsFlex">
+        <nav>
             <ul class="contactsLinks">
                 <li class="contactLink">
                     <a href="https://www.instagram.com/rakhmaemiljan/">
                         <span class="iconify" data-inline="false"
-                              data-icon="cib:instagram" style="font-size: 64px;
+                              data-icon="cib:instagram" style="font-size: 32px;
                               color: black;"></span></a>
                 </li>
                 <li class="contactLink">
                     <a href="https://web.telegram.org/t.me/emilrakh">
                         <span class="iconify" data-inline="false"
-                              data-icon="bx:bxl-telegram" style="font-size: 64px;
+                              data-icon="bx:bxl-telegram" style="font-size: 32px;
                               color: black;"></span></a>
                     </a>
                 </li>
                 <li class="contactLink">
                     <a href="https://github.com/Emilrakh">
                         <span class="iconify" data-inline="false"
-                              data-icon="ant-design:github-filled" style="font-size: 64px;
+                              data-icon="ant-design:github-filled" style="font-size: 32px;
                               color: black;"></span>
                     </a>
                 </li>
                 <li class="contactLink">
                     <a href="mailto:emilrakh@gmail.com">
                         <span class="iconify" data-inline="false"
-                              data-icon="cib:mail-ru" style="font-size: 64px;
+                              data-icon="cib:mail-ru" style="font-size: 32px;
                               color: black;"></span>
                     </a>
                 </li>
             </ul>
         </nav>
-        </div>
+    </div>
     </div>
 </footer>
+
 </body>
+
 </html>
