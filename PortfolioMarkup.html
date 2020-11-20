@@ -6,11 +6,13 @@
     <title>Rakhmangulov Emil</title>
     <link rel="stylesheet" href="PortfolioStyle.css">
     <link rel="icon" href="">
+    <script src="lab5.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <meta name="keywords" content="Рахмангулов, Эмиль, ИТМО">
 </head>
 
 <body>
+
 <header class="header">
     <div class="headerLinks">
         <nav>
@@ -63,6 +65,11 @@
                 <p class="aboutMeInfoText"> I'm like a scourge of God descended from heaven to achieve success,</br>
                     I'm a <strong>junior developer</strong>,</br>
                     I’m tatar </p>
+
+<!--                <blockquote class="blockquoteText">-->
+<!--                    <p>Зараза</p>-->
+<!--                    <cite>Геральт из Ривии</cite>-->
+<!--                </blockquote>-->
             </div>
             <div class="aboutMeSingleSlide">
                 <img src="./Image/myImg.jpg" alt="Rakhmangulov Emil" class="myImg">
@@ -347,7 +354,26 @@
     </div>
     </div>
 </footer>
-
 </body>
+
+<script>
+    function countTag() {
+        var tags = []
+        for (tag of document.getElementsByTagName("*")) {
+            if (tag.tagName in tags)
+                tags[tag.tagName] += 1
+            else
+                tags[tag.tagName] = 1
+        }
+        return tags
+    }
+    console.log("Tags: ", countTag())
+
+    // var div = document.getElementsByTagName("div");
+    // console.log("div: "+ div.length);
+    //
+    // var section = document.getElementsByTagName("section");
+    // console.log("section: "+ section.length);
+</script>
 
 </html>
