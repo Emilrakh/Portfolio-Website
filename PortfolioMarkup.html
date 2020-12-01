@@ -6,7 +6,7 @@
     <title>Rakhmangulov Emil</title>
     <link rel="stylesheet" href="PortfolioStyle.css">
     <link rel="icon" href="">
-    <script src="lab5.js"></script>
+    <script src="labs.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <meta name="keywords" content="Рахмангулов, Эмиль, ИТМО">
 </head>
@@ -65,16 +65,79 @@
                 <p class="aboutMeInfoText"> I'm like a scourge of God descended from heaven to achieve success,</br>
                     I'm a <strong>junior developer</strong>,</br>
                     I’m tatar </p>
-
 <!--                <blockquote class="blockquoteText">-->
 <!--                    <p>Зараза</p>-->
 <!--                    <cite>Геральт из Ривии</cite>-->
 <!--                </blockquote>-->
             </div>
-            <div class="aboutMeSingleSlide">
-                <img src="./Image/myImg.jpg" alt="Rakhmangulov Emil" class="myImg">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Image/myImg1.JPG"  class="myImg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Image/myImg2.jpg"  class="myImg">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Image/myImg3.jpg"  class="myImg">
+                    <div class="text"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
             </div>
+
+<!--            <div class="aboutMeSingleSlide">-->
+<!--                <img src="./Image/myImg.jpg" alt="Rakhmangulov Emil" class="myImg">-->
+<!--            </div>-->
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    const slides = document.getElementsByClassName("mySlides");
+                    const dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace("active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
         </div>
+
     </section>
 
     <!--    Skills-->
@@ -323,6 +386,52 @@
         <nav>
             <ul class="contactsLinks">
                 <li class="contactLink">
+                    <dialog>
+                        <p>
+                        <ul class="contactsLinks">
+                        <li class="contactLink">
+                <a href="https://www.instagram.com/rakhmaemiljan/">
+                        <span class="iconify" data-inline="false"
+                              data-icon="cib:instagram" style="font-size: 32px;
+                              color: black;"></span></a>
+                </li>
+                <li class="contactLink">
+                    <a href="https://web.telegram.org/t.me/emilrakh">
+                        <span class="iconify" data-inline="false"
+                              data-icon="bx:bxl-telegram" style="font-size: 32px;
+                              color: black;"></span></a>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="https://github.com/Emilrakh">
+                        <span class="iconify" data-inline="false"
+                              data-icon="ant-design:github-filled" style="font-size: 32px;
+                              color: black;"></span>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="mailto:emilrakh@gmail.com">
+                        <span class="iconify" data-inline="false"
+                              data-icon="cib:mail-ru" style="font-size: 32px;
+                              color: black;"></span>
+                    </a>
+                </li>
+
+            </ul>
+                        <div id="tel">
+                            tel: +7(962)533-77-28
+                        </div></p>
+                        <button id="close">
+                            <span class="iconify" data-inline="false"
+                                                 data-icon="maki:cross-15" style="font-size: 24px;
+                                                 color: black;"></span></button>
+                    </dialog>
+                    <button id="show">
+                    <span class="iconify" data-inline="false"
+                          data-icon="bx:bxs-contact" style="font-size: 24px;
+                          color: black;"></span></button>
+                </li>
+                <li class="contactLink">
                     <a href="https://www.instagram.com/rakhmaemiljan/">
                         <span class="iconify" data-inline="false"
                               data-icon="cib:instagram" style="font-size: 32px;
@@ -353,27 +462,37 @@
         </nav>
     </div>
     </div>
+    <script type = text/javascript>
+        const dialog = document.querySelector('dialog');
+        document.querySelector('#show').onclick = function() {
+            dialog.showModal();
+        };
+        document.querySelector('#close').onclick = function() {
+            dialog.close();
+        };
+    </script>
 </footer>
 </body>
 
 <script>
+    function sortByCount(arr) {
+        arr.sort((a, b) => a.count > b.count ? 1 : -1);
+    }
+
     function countTag() {
-        var tags = []
+        let tags = []
         for (tag of document.getElementsByTagName("*")) {
-            if (tag.tagName in tags)
-                tags[tag.tagName] += 1
+            const found = tags.find(item => item.tag === tag.tagName)
+            if(found)
+                found.count++
             else
-                tags[tag.tagName] = 1
+                tags.push({tag:tag.tagName, count: 1})
         }
+        sortByCount(tags)
         return tags
     }
-    console.log("Tags: ", countTag())
 
-    // var div = document.getElementsByTagName("div");
-    // console.log("div: "+ div.length);
-    //
-    // var section = document.getElementsByTagName("section");
-    // console.log("section: "+ section.length);
+    console.log("Tags: ", countTag())
 </script>
 
 </html>
