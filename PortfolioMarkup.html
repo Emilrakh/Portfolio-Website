@@ -6,7 +6,6 @@
     <title>Rakhmangulov Emil</title>
     <link rel="stylesheet" href="PortfolioStyle.css">
     <link rel="icon" href="">
-    <script src="labs.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <meta name="keywords" content="Рахмангулов, Эмиль, ИТМО">
 </head>
@@ -32,6 +31,9 @@
                 <li>
                     <a class="headerLink" href="#contacts">Contacts</a>
                 </li>
+                <li>
+                    <button class="headerLink" onclick="openChat()">Chat me</button>
+                </li>
             </ul>
         </nav>
     </div>
@@ -49,6 +51,18 @@
                 <h3 class="introText">Junior Developer / Student</h3>
                 <h5 class="introText">Saint-Petersburg, Russia</h5>
             </div>
+        </div>
+    </section>
+
+    <!--    Chat-->
+
+    <section class="chatSection" id="chatView">
+        <button id="buttonCloseChat" onclick="closeChat()">Close</button>
+        <b id="chatTitleText">Chat me</b>
+        <div id="chatWindow"></div>
+        <div class="chatBottom">
+            <input id="inputLine"/>
+            <button id="sendButton" onclick="sendMessage()">Send</button>
         </div>
     </section>
 
@@ -108,36 +122,7 @@
 <!--                <img src="./Image/myImg.jpg" alt="Rakhmangulov Emil" class="myImg">-->
 <!--            </div>-->
 
-            <script>
-                let slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                    let i;
-                    const slides = document.getElementsByClassName("mySlides");
-                    const dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace("active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                }
-            </script>
         </div>
-
     </section>
 
     <!--    Skills-->
@@ -388,6 +373,10 @@
                 <li class="contactLink">
                     <dialog>
                         <p>
+                            <button id="close">
+                            <span class="iconify" data-inline="false"
+                                  data-icon="maki:cross-15" style="font-size: 24px;
+                                                 color: black;"></span></button>
                         <ul class="contactsLinks">
                         <li class="contactLink">
                 <a href="https://www.instagram.com/rakhmaemiljan/">
@@ -421,10 +410,6 @@
                         <div id="tel">
                             tel: +7(962)533-77-28
                         </div></p>
-                        <button id="close">
-                            <span class="iconify" data-inline="false"
-                                                 data-icon="maki:cross-15" style="font-size: 24px;
-                                                 color: black;"></span></button>
                     </dialog>
                     <button id="show">
                     <span class="iconify" data-inline="false"
@@ -494,5 +479,8 @@
 
     console.log("Tags: ", countTag())
 </script>
+<script type="text/javascript" src="Lab7.js"></script>
+<script type="text/javascript" src="Lab6.js"></script>
+<script type="text/javascript" src="lab5.js"></script>
 
 </html>
